@@ -5,7 +5,7 @@ local RunService = game:GetService("RunService")
 local PlayerService = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local Lighting = game:GetService("Lighting")
---local CoreGui = game:GetService("CoreGui")
+local CoreGui = game:GetService("CoreGui")
 local Stats = game:GetService("Stats")
 
 local MainModule = {DefaultLighting = {}}
