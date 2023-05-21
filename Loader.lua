@@ -26,7 +26,7 @@ local QueueOnTeleport = queue_on_teleport
 or (syn and syn.queue_on_teleport)
 
 local function GetFile(File)
-    return IsLocal and readfile("Parvus/" .. File)
+    return IsLocal and readfile("parlovus/" .. File)
     or game:HttpGet(("%s%s"):format(Parvus.Source,File))
 end
 
