@@ -293,7 +293,7 @@ function MainModule.LightingSection(Self,Tab,Side)
         LightingSection:Toggle({Name = "GlobalShadows",Flag = "Lighting/GlobalShadows",Value = false})
         LightingSection:Colorpicker({Name = "OutdoorAmbient",Flag = "Lighting/OutdoorAmbient",Value = {1,0,1,0,false}})
         LightingSection:Slider({Name = "ShadowSoftness",Flag = "Lighting/ShadowSoftness",Min = 0,Max = 1,Precise = 2,Value = 0})
-        --LightingSection:Toggle({Name = "Terrain Decoration",Flag = "Terrain/Decoration",Value = gethiddenproperty(Terrain,"Decoration"),
+        LightingSection:Toggle({Name = "Terrain Decoration",Flag = "Terrain/Decoration",Value =0,
         Callback = function(Value) sethiddenproperty(Terrain,"Decoration",Value) end})
     end
 end
