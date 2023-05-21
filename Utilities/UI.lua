@@ -219,7 +219,7 @@ local function ConfigsToList(FolderName)
 end
 
 function Assets:Screen() local ScreenAsset = GetAsset("Screen/Bracket")
-	--if not IsLocal then sethiddenproperty(ScreenAsset,"OnTopOfCoreBlur",true) end
+	if not IsLocal then sethiddenproperty(ScreenAsset,"OnTopOfCoreBlur",true) end
 	ScreenAsset.Name = "Bracket " .. game:GetService("HttpService"):GenerateGUID(false)
 	ScreenAsset.Parent = IsLocal and LocalPlayer:FindFirstChildOfClass("PlayerGui") or CoreGui
 	return {ScreenAsset = ScreenAsset,TableToColor = TableToColor}
